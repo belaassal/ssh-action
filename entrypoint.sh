@@ -10,7 +10,7 @@ chmod 600 TMP_PRIVATE_KEY_FILE
 
 echo '---- Start : execute commande ----'
 
-ssh -o StrictHostKeyChecking=no -p "${INPUT_PORT}" -v -i TMP_PRIVATE_KEY_FILE "${INPUT_USER}"@"${INPUT_HOST}"  "${INPUT_REMOTEDIR}"
+ssh -o StrictHostKeyChecking=no -p "${INPUT_PORT}" -v -i TMP_PRIVATE_KEY_FILE "${INPUT_USER}"@"${INPUT_HOST}"  "${INPUT_SCRIPT}"
 
 echo '---- FINISH : commande executed ----'
 
