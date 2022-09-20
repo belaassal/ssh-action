@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Deploy
-        uses: belaassal/ssh-action@main
+        uses: belaassal/ssh-action@1.0.0
         with:
           host: ${{ secrets.HOST }}
           port: ${{ secrets.PORT }}
