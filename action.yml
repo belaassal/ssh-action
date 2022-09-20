@@ -1,0 +1,27 @@
+name: "ssh-action"
+author: "Brahim EL AASSAL <belaassal@gmail.com>"
+description: "Execute SSH commandes to remote server using this GitHub action."
+inputs:
+  host:
+    description: "SSH host"
+    required: true
+  port:
+    description: "SSH port"
+    required: false
+    default: "22"
+  user:
+    description: "user name"
+    required: true
+  key:
+    description: "RSA private key"
+    required: true
+  script:
+    description: "Commande to execute"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  color: "gray-dark"
+  icon: "hash"
